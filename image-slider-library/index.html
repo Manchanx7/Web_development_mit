@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1eb">
+    <meta name="description" content="A responsive, accessible image slider built with vanilla JavaScript.">
+    <title>Field Notes — Image Slider Library</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./slider.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="Field Notes home">
+          <span class="wordmark-mark" aria-hidden="true">F</span>
+          <span>FIELD NOTES</span>
+        </a>
+        <p class="header-note">A small study in going somewhere</p>
+      </header>
+
+      <section class="intro" id="top" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> A VANILLA JAVASCRIPT IMAGE SLIDER</p>
+        <h1 id="page-title">Take the <em>long way.</em></h1>
+        <p class="intro-copy">Five quiet places, one smooth journey. Use the arrows, dots, or your keyboard to find the next view.</p>
+      </section>
+
+      <section class="slider-section" aria-label="Landscape image slider demo">
+        <div class="slider-frame" data-image-slider>
+          <div class="slider-viewport" data-slider-viewport role="region" aria-roledescription="carousel" aria-label="Landscape collection" tabindex="0">
+            <div class="slider-track" data-slider-track>
+              <figure class="slider-slide" data-slider-slide>
+                <img
+                  src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1800&amp;q=88"
+                  alt="A quiet alpine lake reflecting mountains beneath a soft morning sky"
+                  width="1800"
+                  height="1100"
+                  fetchpriority="high">
+                <figcaption class="slide-caption">
+                  <span class="slide-kicker">01 / STILL WATER</span>
+                  <h2>Morning, held still</h2>
+                  <p>Dolomites, Italy</p>
+                </figcaption>
+              </figure>
+              <figure class="slider-slide" data-slider-slide>
+                <img
+                  src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1800&amp;q=88"
+                  alt="A mountain lake framed by dark evergreen slopes"
+                  width="1800"
+                  height="1100"
+                  loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-kicker">02 / HIGH COUNTRY</span>
+                  <h2>Where the trail opens</h2>
+                  <p>Alpine lake country</p>
+                </figcaption>
+              </figure>
+              <figure class="slider-slide" data-slider-slide>
+                <img
+                  src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&amp;fit=crop&amp;w=1800&amp;q=88"
+                  alt="Blue ocean waves folding into a pale sandy shoreline"
+                  width="1800"
+                  height="1100"
+                  loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-kicker">03 / OPEN COAST</span>
+                  <h2>Salt in the air</h2>
+                  <p>Atlantic shoreline</p>
+                </figcaption>
+              </figure>
+              <figure class="slider-slide" data-slider-slide>
+                <img
+                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&amp;fit=crop&amp;w=1800&amp;q=88"
+                  alt="A sunlit path winding through a deep green forest"
+                  width="1800"
+                  height="1100"
+                  loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-kicker">04 / GREEN QUIET</span>
+                  <h2>Under the canopy</h2>
+                  <p>Old-growth forest</p>
+                </figcaption>
+              </figure>
+              <figure class="slider-slide" data-slider-slide>
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1800&amp;q=88"
+                  alt="A wide mountain valley glowing in the last light of day"
+                  width="1800"
+                  height="1100"
+                  loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-kicker">05 / LAST LIGHT</span>
+                  <h2>Stay for the evening</h2>
+                  <p>Western highlands</p>
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-arrow slider-arrow--previous" type="button" data-slider-previous aria-label="Show previous image">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button class="slider-arrow slider-arrow--next" type="button" data-slider-next aria-label="Show next image">
+              <span aria-hidden="true">→</span>
+            </button>
+            <div class="slide-count" aria-hidden="true">
+              <span data-slider-current>01</span>
+              <span class="count-divider">/</span>
+              <span data-slider-total>05</span>
+            </div>
+          </div>
+          <div class="slider-footer">
+            <p class="slider-hint">USE THE ARROWS OR ← → KEYS</p>
+            <div class="slider-dots" data-slider-dots role="group" aria-label="Choose an image"></div>
+            <p class="slider-index-label">SCENES FOR A SLOWER DAY</p>
+          </div>
+          <p class="visually-hidden" data-slider-status aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>BUILT WITH HTML, CSS &amp; VANILLA JAVASCRIPT</p>
+        <p>NO PLUGINS. JUST THE VIEW.</p>
+      </footer>
+    </main>
+  </body>
+</html>
